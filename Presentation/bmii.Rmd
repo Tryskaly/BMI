@@ -1,0 +1,61 @@
+---
+title: "Body Mass Index"
+author: "X.D."
+date: "12/07/2018"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## What is BMI?
+
+Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women, in order to know if a person suffers from overweight or obesity. 
+
+Furthermore, is an estimate of body fat and a good gauge of your risk for diseases that can occur with more body fat. The higher your BMI, the higher your risk for certain diseases such as heart disease, high blood pressure, type 2 diabetes, gallstones, breathing problems, and certain cancers.
+
+Although BMI have some limits:
+
+ - It may overestimate body fat in athletes and others who have a muscular build
+ - It may underestimate body fat in older persons and others who have lost muscle
+
+## BMI Calculation
+
+As commented before, the BMI takes into account height (cm) and weight (Kg) of an adult.
+
+For example, for an adult of Weight = 65 Kg and Height = 170 cm, the BMI is:
+
+```{r, echo=TRUE}
+    Weight <- 65 #kg
+    Height <- 170 #cm
+    
+    BMI <- Weight / (Height/100)^2
+    BMI
+```
+
+## BMI Interpretation
+
+Depending of the value obtained after the BMI calculation, we could say:
+
+ - BMI < 18.5:    Your BMI suggests you are underweight.
+ - BMI 18.5 - 30: Fantastic! Your BMI indicates you are a healthy weight for your height.
+ - BMI > 30:      Your BMI suggests you may be at risk of developing weight-related problems.
+
+
+## Shiny Application
+
+Since the importance of obesity, a Shiny Application has been programmed in order to calculate the BMI index.
+
+First of all is necessary to introduce the weight in Kg and the height in cm. After pressing the "Calculate" button, a message with your BMI and its interpretation will appear.
+
+
+### More information about:
+
+- BMI:
+https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmi-m.htm
+
+- Shiny Application:
+https://github.com/Tryskaly/BMI
+
+

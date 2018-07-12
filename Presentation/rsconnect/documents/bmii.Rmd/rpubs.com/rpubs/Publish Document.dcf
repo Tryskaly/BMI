@@ -1,0 +1,10 @@
+name: Publish Document
+title:
+username:
+account: rpubs
+server: rpubs.com
+hostUrl: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/404032/5afe073429bf4db3b4e519696efbefe3
+bundleId: https://api.rpubs.com/api/v1/document/404032/5afe073429bf4db3b4e519696efbefe3
+url: http://rpubs.com/Tryskelyon/404032
+when: 1531415317.9704
